@@ -278,7 +278,28 @@ p, li, em, span, label, input, textarea{
     line-height: 3em;
 }
 
-#about p
+.about-me a{
+    color: #17a2b8;
+}
+.about-me a:hover{
+    color: blue ;
+}
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;

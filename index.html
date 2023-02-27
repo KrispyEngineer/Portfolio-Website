@@ -10,23 +10,25 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>Piyush Patil</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills & Project</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Skills & Project</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="S1">
             <div class="main-container">
-                <div class="intro-wrapper">
+                <div id="home" class="intro-wrapper">
 
                     <div class="nav"> 
                         <div class="socials">
@@ -48,10 +50,10 @@
                          <h5 style="text-align: center; line-height: 40px;">Personalise Theme</h5>
                         
                         <div id="theme-wrapper">
-                            <div id="light-mode" class="theme-dots"></div>
-                            <div id="blue-mode" class="theme-dots"></div>
-                            <div id="green-mode" class="theme-dots"></div>
-                            <div id="purple-mode" class="theme-dots"></div>
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                         </div>
                         <p id="settings-note" style="line-height: 40px;">Theme settings are saved for next sessions.</p>
                     </div>
@@ -102,7 +104,7 @@ With always grateful attitude for the opportunities given to me and i am  always
                                 <ul>
                                     <li>Python</li>
                                     <li>Bash Scripting</li>
-                                    <li>Server side Job Sceduling and workload automation</li>
+                                    <li>Server side Job Sceduling & workload automation</li>
                                     <li>HTTP & HTTPS</li>
                                     <li>HTML/CSS</li>
                                 </ul>
@@ -118,7 +120,28 @@ With always grateful attitude for the opportunities given to me and i am  always
                         </div>
                         <div class="experience">
                             <h4>Work experience</h4>
-
+                            <div class="timeline">
+                                <div class="outer">
+                                    <div class="card">
+                                        <div class="info">
+                                            <h5 class="title">Capgemini Tech Ltd</h5>
+                                            <p>Knowledge of working in admin 
+                                                level Bash scripts, Service-now, Slack and client based Version control system. Writing 
+                                                daily status reports, standard operating procedures (SOPs), and technical 
+                                                documentation for operations and process flow 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="info">
+                                            <h5 class="title">eClerx Services Ltd</h5>
+                                            <p> Worked on data modeling project, where major tasks were data 
+enrichment/gap filling, standardization, categorization and cleansing of online and 
+offline product data for a US based client website. Writing technical documentation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     
                     </div>
@@ -126,17 +149,68 @@ With always grateful attitude for the opportunities given to me and i am  always
             </div>
         </section>
 
-        <section class="S1">
+        <section  class="S1">
             <div class="main-container">
-               Portfolio and Projects
+               <h4 id="project" style="text-align: center; padding: 20px">Some of my Projects.</h4>
+               
+               <div class="post-wrapper">
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="Images/paswd gen.png" alt="Project1" width="320" height="240">
+                            <div class="post-preview">
+                                <h6 class="post-title">Password Generator.</h6>
+                                <p class="post-intro">Built password and pass-phrase genrator web app 
+                                    using python and streamlit framework. Using python random module. <a href="#"> Read More.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="Images/project2.jpg" alt="project2" width="320" height="240">
+                            <div class="post-preview">
+                                <h6 class="post-title">Path Finder</h6>
+                                <p class="post-intro">Built a path finding visualizer, which uses Dijkstra;s Algorithms
+                                    to find shortest path between end points. <a href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="Images/project3.png" alt="project3" width="320" height="240">
+                            <div class="post-preview">
+                                <h6 class="post-title">Project 3</h6>
+                                <p class="post-intro">description</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               
             </div>
         </section>
 
         <section class="S2">
             <div class="main-container">
-                Contact
+                <h3 id="contact" style="text-align: center; margin: 15px;" >Get in Touch</h3>
+                <form id="contact-form" action="">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+    
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+    
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
+    
+                    <label>Message</label>
+                    <textarea class="input-field" name="message"></textarea>
+
+                    <input id="submit-btn" type="submit" value="send">
+                </form>
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

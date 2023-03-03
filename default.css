@@ -21,6 +21,10 @@
     list-style: none;
 }
 
+body *{
+    transition: 0.5s;
+}
+
 header{
     width: 100%;
     margin: 0 auto;
@@ -42,8 +46,6 @@ nav{
 header li{
     display: inline-block;
     margin: 10px;
-    font-size: ;
-    font-weight: ;
     color: black;
 }
 
@@ -174,7 +176,7 @@ p, li, em, span, label, input, textarea{
     justify-content: center;
 }
 
-.theme-dots{
+.theme-dot{
     height: 30px;
     width: 30px;
     border: 2px solid var(--themedotborder);
@@ -189,7 +191,7 @@ p, li, em, span, label, input, textarea{
     cursor: pointer;
 }
 
-.theme-dots:hover{
+.theme-dot:hover{
     border-width: 5px;
 }
 

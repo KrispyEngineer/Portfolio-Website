@@ -1,0 +1,12 @@
+:root{
+    --primText: #fff;
+    --secText: #eeeeee;
+    --primColor: #15202B;
+    --secColor: #192734;
+
+    --borderColor: #164D56;
+    --themedotborder: #FFF;
+    --previewBg: rgb(25, 39, 52, 0.8);;
+    --previewShadow: #111921;
+    --btnColor: #17a2b8;
+}
